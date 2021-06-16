@@ -10,10 +10,9 @@
                 <a href="#">Contact</a> <br>
             </div>
         </div>
-        <div class="col-4 col-sm" style="background-color: white; margin: 10px;">
-            <h5 style="margin-left: 80px;">Central office</h5>
-            <p style="margin-left: 80px;"> Jl. Jendral Gatot Subroto Kav. 36-38 <br>
-                Jakarta 12190 Indonesia </p>
+        <div class="col-4 col-sm" style="background-color: white; margin: 10px;" *ngFor="let item of address">
+            <h5 style="margin-left: 80px;">{{item.label}}</h5>
+            <p style="margin-left: 80px;"> {{item.text}} </p>
         </div>
         <div class="col-4 col-sm" style="background-color: white; margin: 10px;">
             <h5 style="margin-left: 80px;">Follow us</h5>

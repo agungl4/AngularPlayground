@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  address = [{
+    label: "Central office",
+    text: `Jl. Jendral Gatot Subroto Kav. 36-38     
+    Jakarta 12190 Indonesia`
+  }]
   constructor() { }
 
   ngOnInit(): void {
