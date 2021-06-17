@@ -23,7 +23,7 @@ export class BsNavbarDirective {
 
   @HostBinding('class')
   get applyStyles(): string {
-    return `navbar fixed-top navbar-expand-lg navbar-dark ${this.navbarStyle}`
+    return `navbar fixed-top navbar-expand-lg ${this.navbarStyle}`
   }
 
   constructor() { }

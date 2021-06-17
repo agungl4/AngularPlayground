@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -7,6 +7,9 @@ import { HeaderComponent } from './pages/home/header/header.component';
 import { ContentComponent } from './pages/home/content/content.component';
 import { FooterComponent } from './pages/home/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
+import { registerLocaleData } from '@angular/common';
+import localeId from '@angular/common/locales/id'; 
+registerLocaleData(localeId, 'id'); 
 
 @NgModule({
   declarations: [
@@ -19,7 +22,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule, SharedModule
   ],
-  providers: [],
+  providers: [    { provide: LOCALE_ID, useValue: "id-ID" },  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

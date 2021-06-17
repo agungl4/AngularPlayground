@@ -8,28 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 
   benefits = [{
-    label: "Delivery",
+    label: "delivery",
     text: "We have free delivery service to all city in Indonesia."
   },
   {
-    label: "Legality",
+    label: "legality",
     text: "We commit to keep you trusted with legality transaction."
   },
   {
-    label: "Price",
+    label: "price",
     text: "Good quality with the best prices.",
   },
   {
-    label: "Reward",
+    label: "reward",
     text: "More transaction, more point and reward."
   },
   {
-    label: "Transaction",
+    label: "transaction",
     text: "Our transaction is simple and secured."
   },
   {
-    label: "Brand",
-    text: "Our product is the best on quality and brand."
+    label: "brand",
+    text: "our product is the best on quality and brand."
   }
   ]
 

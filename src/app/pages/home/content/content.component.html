@@ -9,7 +9,7 @@
             <br>
             <div class="row">
                 <div class="col-4 col-sm-4" *ngFor="let item of benefits">
-                    <p class="text-center" style="font-weight: 700;">{{item.label}}</p>
+                    <p class="text-center" style="font-weight: 700;">{{item.label | titleCase}}</p>
                     <p class="text-center">{{item.text}}</p>
                     <br>
                 </div>
