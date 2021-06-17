@@ -6,6 +6,7 @@ import { NavbarComponent } from './pages/home/navbar/navbar.component';
 import { HeaderComponent } from './pages/home/header/header.component';
 import { ContentComponent } from './pages/home/content/content.component';
 import { FooterComponent } from './pages/home/footer/footer.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FooterComponent } from './pages/home/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
