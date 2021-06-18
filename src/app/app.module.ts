@@ -7,7 +7,7 @@ import { HeaderComponent } from './pages/home/header/header.component';
 import { ContentComponent } from './pages/home/content/content.component';
 import { FooterComponent } from './pages/home/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
-import { registerLocaleData } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import localeId from '@angular/common/locales/id'; 
 registerLocaleData(localeId, 'id'); 
 
@@ -20,7 +20,7 @@ registerLocaleData(localeId, 'id');
     FooterComponent
   ],
   imports: [
-    BrowserModule, SharedModule
+    BrowserModule, SharedModule, CommonModule
   ],
   providers: [    { provide: LOCALE_ID, useValue: "id-ID" },  ],
   bootstrap: [AppComponent]

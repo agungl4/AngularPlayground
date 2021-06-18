@@ -35,15 +35,15 @@ export class ContentComponent implements OnInit {
 
   products = [{
     image: "../../../../assets/Images/1.png",
-    label: "Platinum Investment"
+    label: "platinum investment"
   },
   {
     image: "../../../../assets/Images/2.png",
-    label: "Gold Investment"
+    label: "gold investment"
   },
   {
     image: "../../../../assets/Images/1.png",
-    label: "Silver Investment"
+    label: "silver investment"
   }
 ]
 
